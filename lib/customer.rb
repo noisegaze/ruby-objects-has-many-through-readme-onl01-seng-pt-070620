@@ -41,8 +41,10 @@ class Customer
     self.all.each do |customer|
       if customer.age > oldest_age = customer.age
         oldest_age = customer.age 
+        oldest_customer = customer
       end
     end 
+    oldest_customer
   end
   
   
